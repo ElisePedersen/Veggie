@@ -124,13 +124,14 @@
   }
 
   #ingredients {
-    border-left: solid;
-    border-right: solid;
+    border-bottom: solid;
     border-color: #247251;
     border-width: 2px;
+    margin-top: 40px;
     color: black;
     grid-template-columns: 1fr 1fr;
     display: inline-grid;
+    gap: 0px 60px;
   }
 
   h2 {

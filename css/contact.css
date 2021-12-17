@@ -7,7 +7,7 @@
   color: red;
 }
 
-form {
+main form {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -15,7 +15,7 @@ form {
   align-items: flex-end;
 }
 
-form div {
+main form div {
   margin: 20px 0px;
 }
 
