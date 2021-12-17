@@ -1,0 +1,47 @@
+.contact-text {
+  text-align: center;
+}
+
+.form-error {
+  display: none;
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+form div {
+  margin: 20px 0px;
+}
+
+.success-form {
+  margin: 16px auto 0px auto;
+}
+
+label {
+  display: grid;
+}
+
+#contact-form input {
+  width: 400px;
+  border: solid;
+  border-color: #247251;
+  border-width: 2px;
+  padding: 3px 10px;
+}
+
+textarea {
+  width: 400px;
+  border-color: #247251;
+  border-width: 2px;
+  padding: 3px 10px;
+}
+
+button {
+  align-self: center;
+}

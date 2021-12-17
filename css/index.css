@@ -1,0 +1,86 @@
+.scrollbar-header,
+.index-about h2 {
+  text-transform: uppercase;
+}
+
+.welcome-section {
+  text-align: center;
+}
+
+.scrollbar-header {
+  text-align: center;
+}
+
+.home-scrollbar {
+  display: flex;
+  gap: 20px;
+  max-width: 958px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.scrollbar-recipes img {
+  height: 200px;
+}
+
+.scrollbar-recipes:nth-child(even) {
+  background-color: #247251;
+  color: white;
+}
+
+.scrollbar-recipes:nth-child(odd) {
+  border: solid;
+  border-width: 2px;
+  border-color: #247251;
+  color: black;
+}
+
+.scrollbar-recipes {
+  margin: 0px;
+  flex: 1;
+}
+
+.scrollbar-text {
+  padding: 10px;
+}
+
+.scrollbar-back,
+.scrollbar-forward {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.scrollbar-navigation {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.index-about {
+  border: solid;
+  border-width: 2px;
+  border-color: #247251;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  max-width: 1111px;
+  margin: 0 auto;
+}
+
+.index-about img {
+  width: 70%;
+  justify-self: center;
+  align-self: center;
+  grid-row: 1/3;
+}
+
+.index-about h2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.index-about p {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  padding-right: 20px;
+}

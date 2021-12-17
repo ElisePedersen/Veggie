@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Find the perfect recipe for your next vegetarian meal.">
+    <title>Veggie | Recipes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!-- Hotjar Tracking Code for https://romantic-hodgkin-5e52b9.netlify.app -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2732805,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body>
+    <header>
+        <ul class="navigation-cta">
+            <li><a class="navigation-item" href="recipes.html">Recipes</a></li>
+            <li><a class="navigation-item" href="about.html">About</a></li>
+            <li><a class="navigation-item" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="hamburger"><img src="images/hamburger.svg" alt="navigation-section" class="hamburger-icon"></button>
+        <a href="/"><img src="images/veggie-logo.png" alt="veggie logo" class="logo"></a>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="recipes.html" id="active">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form method="POST" class="search-section">
+            <img src="images/search.svg" alt="search icon" class="search-icon">
+            <input type="text" name="search" class="search">
+        </form>
+
+        <div class=search-modal>
+            <div class=search-modal-header>
+                <button class=search-modal-close>&times;</button>
+            </div>
+            <div class=search-modal-body>
+                <form method="POST" class="search-section">
+                    <img src="images/search.svg" alt="search icon" class="search-icon">
+                    <input type="text" name="search" id="modal-search">
+                </form>
+            </div>
+        </div>
+        <div class=overlay></div>
+    </header>
+    <main>
+        <div class="previous-page-section">
+            <button class="previous-page"><img src="images/back.svg" alt="previous page"></button>
+            <p>Back</p>
+        </div>
+        <h1>Recipes</h1>
+        <div class="recipes-container">
+            <div class="filter">
+                <h2>Filter</h2>
+                <form class="filter-meal"> 
+                    <h3>Type of Meal</h3>
+                    <label for="breakfast">
+                        <input type="radio" name="meal" class="breakfast"> Breakfast
+                    </label>
+                    <label for="lunch">
+                        <input type="radio" name="meal" class="lunch"> Lunch
+                    </label>
+                    <label for="dinner"> 
+                        <input type="radio" name="meal" class="dinner"> Dinner
+                    </label>
+                    <label for="dessert">
+                        <input type="radio" name="meal" class="dessert"> Dessert
+                    </label>
+                </form>
+                <form class="filter-time"> 
+                    <h3>Cooking Time</h3>
+                    <label for="under-twenty">
+                        <input type="radio" name="time" class="under-twenty"> Under 20 minutes
+                    </label>
+                    <label for="twenty-thirty">
+                        <input type="radio" name="time" class="twenty-thirty"> 20 - 30 minutes
+                    </label>
+                    <label for="thirty-forty"> 
+                        <input type="radio" name="time" class="thirty-forty"> 30 - 40 minutes
+                    </label>
+                </form>
+                <form class="filter-difficulty"> 
+                    <h3>Difficulty</h3>
+                    <label for="easy">
+                        <input type="radio" name="difficulty" class="easy"> Easy
+                    </label>
+                    <label for="medium">
+                        <input type="radio" name="difficulty" class="medium"> Medium
+                    </label>
+                    <label for="hard"> 
+                        <input type="radio" name="difficulty" class="hard"> Hard
+                    </label>
+                </form>
+            </div>
+            <div class="cta-filter">
+                <form>
+                    <label for="cta-filter-meal">
+                    <select name="cta-filter-meal" id="cta-filter-meal">
+                        <option value="type-of-meal">Type of Meal</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="dessert">Dessert</option>
+                    </select>
+                    </label>
+                </form>
+                <form>
+                    <label for="cta-filter-time">
+                    <select name="cta-filter-time" id="cta-filter-time">
+                        <option value="cooking-time">Cooking Time</option>
+                        <option value="under-twenty">Under 20 mintues</option>
+                        <option value="twenty-thirty">20 - 30 minutes</option>
+                        <option value="thirty-forty">30 - 40 minutes</option>
+                    </select>
+                    </label>
+                </form>
+                <form>
+                    <label for="cta-filter-difficulty">
+                    <select name="cta-filter-difficulty" id="cta-filter-difficulty">
+                        <option value="difficulty">Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    </label>
+                </form>
+            </div>
+            <div class="recipes-section">
+                
+                
+            </div>
+            <button class="cta show-more">Show More</button>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-navigation">
+            <p>Site Navigation</p>
+            <a href="recipes.html">Recipes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="support">
+            <p>Support</p>
+            <a href="/">Privacy Policy</a>
+            <a href="/">Terms of Use</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="follow">
+            <p>Follow Us</p>
+            <img src="" alt="">Instagram
+            <img src="" alt="">Twitter
+            <img src="" alt="">Facebook
+        </div>  
+        <div class="copyright">
+            &copy; 2021 Veggie, Inc. All Rights Reserved
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/recipes.js"></script>
+</body>
+</html>

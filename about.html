@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Welcome to Veggie. This is a blog where you can find delicious vegetarian recipes for your next meal.">
+    <title>Veggie | About</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!-- Hotjar Tracking Code for https://romantic-hodgkin-5e52b9.netlify.app -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2732805,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body>
+    <header>
+        <ul class="navigation-cta">
+            <li><a class="navigation-item" href="recipes.html">Recipes</a></li>
+            <li><a class="navigation-item" href="about.html">About</a></li>
+            <li><a class="navigation-item" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="hamburger"><img src="images/hamburger.svg" alt="navigation-section" class="hamburger-icon"></button>
+        <a href="/"><img src="images/veggie-logo.png" alt="veggie logo" class="logo"></a>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html" id="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form method="POST" class="search-section">
+            <img src="images/search.svg" alt="search icon" class="search-icon">
+            <input type="text" name="search" class="search">
+        </form>
+
+        <div class=search-modal>
+            <div class=search-modal-header>
+                <button class=search-modal-close>&times;</button>
+            </div>
+            <div class=search-modal-body>
+                <form method="POST" class="search-section">
+                    <img src="images/search.svg" alt="search icon" class="search-icon">
+                    <input type="text" name="search" id="modal-search">
+                </form>
+            </div>
+        </div>
+        <div class=overlay></div>
+    </header>
+    <main>
+        <div class="previous-page-section">
+            <button class="previous-page"><img src="images/back.svg" alt="previous page"></button>
+            <p>Back</p>
+        </div>
+        <h1>About</h1>
+        <section class="about-section">
+            <img src="images/about-image.jpg" alt="woman holding up green lettuce" class="about-image">
+            <div class="about-text">
+                <div class="first">
+                    <h2>Who Are We?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="second">
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="third">
+                    <h2>Our Vision</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div> 
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-navigation">
+            <p>Site Navigation</p>
+            <a href="recipes.html">Recipes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="support">
+            <p>Support</p>
+            <a href="/">Privacy Policy</a>
+            <a href="/">Terms of Use</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="follow">
+            <p>Follow Us</p>
+            <a href="/">Instagram</a>
+            <a href="/">Twitter</a>
+            <a href="/">Facebook</a>
+        </div>  
+        <div class="copyright">
+            &copy; 2021 Veggie, Inc. All Rights Reserved
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

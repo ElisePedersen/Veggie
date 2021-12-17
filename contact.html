@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Please get in touch with us if you have any questions.">
+    <title>Veggie | Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!-- Hotjar Tracking Code for https://romantic-hodgkin-5e52b9.netlify.app -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2732805,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body>
+    <header>
+        <ul class="navigation-cta">
+            <li><a class="navigation-item" href="recipes.html">Recipes</a></li>
+            <li><a class="navigation-item" href="about.html">About</a></li>
+            <li><a class="navigation-item" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="hamburger"><img src="images/hamburger.svg" alt="navigation-section" class="hamburger-icon"></button>
+        <a href="/"><img src="images/veggie-logo.png" alt="veggie logo" class="logo"></a>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" id="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form method="POST" class="search-section">
+            <img src="images/search.svg" alt="search icon" class="search-icon">
+            <input type="text" name="search" class="search">
+        </form>
+
+        <div class=search-modal>
+            <div class=search-modal-header>
+                <button class=search-modal-close>&times;</button>
+            </div>
+            <div class=search-modal-body>
+                <form method="POST" class="search-section">
+                    <img src="images/search.svg" alt="search icon" class="search-icon">
+                    <input type="text" name="search" id="modal-search">
+                </form>
+            </div>
+        </div>
+        <div class=overlay></div>
+    </header>
+    <main>
+        <div class="previous-page-section">
+            <button class="previous-page"><img src="images/back.svg" alt="previous page"></button>
+            <p>Back</p>
+        </div>
+        <h1>Contact</h1>
+        <p class="contact-text">Please do not hesitate to contacts us if you have any questions.</p>
+        <section class="container">
+            <form id="contact-form">
+                <div>
+                    <label>
+                        Full Name
+                        <input type="text" id="fullname"/>
+                    </label>
+                    <div class="form-error" id="fullnameError">Must be more than 5 characters</div>
+                </div>
+                <div>
+                    <label>
+                        Email
+                        <input type="email" id="email"/>
+                    </label>
+                    <div class="form-error" id="emailError">Invalid email</div>
+                </div>
+                <div>
+                    <label>
+                        Subject
+                        <input type="text" id="subject"/>
+                    </label>
+                    <div class="form-error" id="subjectError">Subject must be more than 15 characters</div>
+                </div>
+                <div>
+                    <label>
+                        Message
+                        <textarea type="text" id="message" cols="30" rows="10"placeholder="Write your message here..."></textarea>
+                    </label>
+                    <div class="form-error" id="messageError">The message must be more than 25 characters</div>
+                </div>
+                <button class="cta">Send Message</button>
+                <div class="success-form">
+
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-navigation">
+            <p>Site Navigation</p>
+            <a href="recipes.html">Recipes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="support">
+            <p>Support</p>
+            <a href="/">Privacy Policy</a>
+            <a href="/">Terms of Use</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="follow">
+            <p>Follow Us</p>
+            <img src="" alt="">Instagram
+            <img src="" alt="">Twitter
+            <img src="" alt="">Facebook
+        </div>  
+        <div class="copyright">
+            &copy; 2021 Veggie, Inc. All Rights Reserved
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
