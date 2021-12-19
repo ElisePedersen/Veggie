@@ -1,3 +1,19 @@
+.loading-indicator {
+  border: 7px solid white;
+  border-top: 7px solid #247251;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: loading-indicator 2s linear infinite;
+  margin: 30px auto;
+}
+
+@keyframes loading-indicator {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 .scrollbar-header,
 .index-about h2 {
   text-transform: uppercase;

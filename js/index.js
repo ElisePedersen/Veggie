@@ -9,6 +9,7 @@ async function getRecent(baseUrl){
     const recent = await response.json();
     console.log(recent);
 
+    scrollbar.innerHTML=""
     try {
         for (let i = 0; i < recent.length; i++) {
             if (recent[i]) {

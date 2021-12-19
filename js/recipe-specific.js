@@ -21,6 +21,8 @@ async function fetchRecipe() {
 
         document.title = `Veggie | ${recipe.title.rendered}`;
 
+        specificRecipe.innerHTML = "";
+
         specificRecipe.innerHTML = `<h1>${recipe.title.rendered}</h1>
                                     <div class=recipe-information>
                                     <img "img src='${recipe._embedded["wp:featuredmedia"][0].source_url}'" alt='${recipe._embedded["wp:featuredmedia"][0].alt_text}' id=recipe-image>

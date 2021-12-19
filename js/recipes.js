@@ -63,3 +63,38 @@ async function getMore(newUrl) {
 
 getMore(newUrl);
 
+//Filter recipes
+
+// const filterUrl = corsFix + "https://elisepedersen.no/test/wp-json/wp/v2/posts?_embed";
+// let lunch = document.querySelector(".lunch");
+
+// async function getFilteredPosts(filterUrl){
+//     const response = await fetch(filterUrl);
+//     const filter = await response.json();
+//     console.log(filter);
+
+//     recipesSection.innerHTML = "";
+
+//     try {
+//         for (let i = 0; i < filter.length; i++) {
+//             if (filter[i].categories[1]) {
+//                 console.log("success")
+//                 recipesSection.innerHTML += `<a href="recipe-specific.html?id=${filter[i].id}" class=recipes>
+//                                             <img "img src='${filter[i]._embedded["wp:featuredmedia"][0].source_url}'" alt='${filter[i]._embedded["wp:featuredmedia"][0].alt_text}'>
+//                                             <div class=recipes-text>
+//                                             <h2>${filter[i].title.rendered}</h2>
+//                                             <p>${filter[i].excerpt.rendered}</p>
+//                                             </div>
+//                                             </a>`
+//             } else {
+//                 recipesSection.innerHTML += "";
+//         }  
+//     }
+//     }catch(error) {
+//         console.log(error)
+//         recipesSection.innerHTML = '<p>An error occurred</p>'
+//     }
+// }
+
+// lunch.addEventListener("click", getFilteredPosts(filterUrl));
+
